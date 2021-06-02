@@ -1,0 +1,289 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://assets/scenes/ui/home/Menus.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/ui/buttons/Novo_jogo_button_1.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/ui/buttons/Options_button_0.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/ui/buttons/Fases_button_1.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/ui/buttons/Options_button_1.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/ui/buttons/Sair_button_1.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/ui/buttons/Novo_jogo_button_0.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/ui/buttons/Sair_button_0.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/ui/buttons/Fases_button_0.png" type="Texture" id=9]
+
+[sub_resource type="Animation" id=1]
+resource_name = "fases"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Fases - Unselec:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Fases - Selec:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "jogo"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Novo Jogo - Selec:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Novo Jogo - Unselec:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "opcoes"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Opção - Selec:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Opção - Unselec:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "sair"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Sair - Selec:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Sair - Unselec:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+
+[sub_resource type="Animation" id=5]
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Novo Jogo - Selec:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Fases - Unselec:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Opção - Unselec:modulate:a")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Sair - Unselec:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Novo Jogo - Unselec:modulate:a")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Fases - Selec:modulate:a")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Opção - Selec:modulate:a")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Sair - Selec:modulate:a")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+
+[node name="Menus" type="Control"]
+margin_right = 1033.0
+margin_bottom = 606.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Novo Jogo - Selec" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 182.848
+margin_top = 329.955
+margin_right = 312.848
+margin_bottom = 385.955
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Novo Jogo - Unselec" type="TextureRect" parent="."]
+margin_left = 329.848
+margin_top = 329.955
+margin_right = 459.848
+margin_bottom = 385.955
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fases - Selec" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 218.0
+margin_top = 393.0
+margin_right = 277.0
+margin_bottom = 436.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fases - Unselec" type="TextureRect" parent="."]
+margin_left = 369.997
+margin_top = 393.054
+margin_right = 428.997
+margin_bottom = 433.054
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Opção - Selec" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 207.0
+margin_top = 455.0
+margin_right = 290.0
+margin_bottom = 498.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Opção - Unselec" type="TextureRect" parent="."]
+margin_left = 399.0
+margin_top = 455.0
+margin_right = 482.0
+margin_bottom = 498.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sair - Selec" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 222.0
+margin_top = 524.0
+margin_right = 278.0
+margin_bottom = 554.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sair - Unselec" type="TextureRect" parent="."]
+margin_left = 438.0
+margin_top = 524.0
+margin_right = 494.0
+margin_bottom = 554.0
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "show"
+anims/fases = SubResource( 1 )
+anims/jogo = SubResource( 2 )
+anims/opcoes = SubResource( 3 )
+anims/sair = SubResource( 4 )
+anims/show = SubResource( 5 )
