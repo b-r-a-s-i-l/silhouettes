@@ -7,8 +7,10 @@ export (Color) var color = Color.black
 
 onready var animation = $"AnimationPlayer"
 
+var object
+
 func _ready():
-	Global.connect("DOOR_UNLOCKED", self, "door_unlocked")
+	object = Global.connect("DOOR_UNLOCKED", self, "door_unlocked")
 	modulate = color
 
 func _process(_delta):
@@ -29,8 +31,8 @@ func check_interaction():
 				print ("THE DOOR IS LOCKED")
 
 func door_unlocked(code_received):
-	if code_received == unlocked_code:
-		state = Global.Door.UNLOCKED
+		if code_received == unlocked_code:
+			state = Global.Door.UNLOCKED
 
 func door_animation():
 	if state == Global.Door.UNLOCKED:

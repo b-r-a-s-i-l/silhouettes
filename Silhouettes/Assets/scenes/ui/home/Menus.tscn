@@ -208,6 +208,7 @@ __meta__ = {
 }
 
 [node name="Novo Jogo - Unselec" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 329.848
 margin_top = 329.955
 margin_right = 459.848
@@ -218,7 +219,6 @@ __meta__ = {
 }
 
 [node name="Fases - Selec" type="TextureRect" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 218.0
 margin_top = 393.0
 margin_right = 277.0
@@ -229,6 +229,7 @@ __meta__ = {
 }
 
 [node name="Fases - Unselec" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 369.997
 margin_top = 393.054
 margin_right = 428.997
@@ -250,6 +251,7 @@ __meta__ = {
 }
 
 [node name="Opção - Unselec" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 399.0
 margin_top = 455.0
 margin_right = 482.0
@@ -271,6 +273,7 @@ __meta__ = {
 }
 
 [node name="Sair - Unselec" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 438.0
 margin_top = 524.0
 margin_right = 494.0
