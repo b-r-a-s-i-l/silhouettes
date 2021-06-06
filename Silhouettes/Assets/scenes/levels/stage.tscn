@@ -24,8 +24,7 @@ zoom = Vector2( 2, 2 )
 
 [node name="Bakcground" type="Sprite" parent="."]
 modulate = Color( 0.87451, 0.87451, 0.87451, 1 )
-position = Vector2( -6.78015, 57.583 )
-scale = Vector2( 3.0954, 3.02547 )
+scale = Vector2( 2.54795, 1.88939 )
 texture = ExtResource( 7 )
 script = ExtResource( 10 )
 color = Color( 0.133333, 0.0862745, 0.223529, 1 )

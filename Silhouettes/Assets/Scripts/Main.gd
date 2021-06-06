@@ -1,8 +1,12 @@
 extends Node
 
+export (bool) var enable = false
+
 func _ready():
-	SceneChanger.change_scene('res://assets/scenes/ui/home.tscn', 'fade_in', 'fade_out')
-	pass
+
+	if (enable):
+		SceneChanger.change_scene('res://assets/scenes/ui/home.tscn', 'fade_in', 'fade_out')
+
 
 
 

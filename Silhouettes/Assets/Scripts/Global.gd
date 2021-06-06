@@ -52,18 +52,23 @@ const IS_VISIBLE = 1
 const IS_NOT_VISIBLE = 0.6
 
 #SIGNALS
+signal LAYER_CHANGE
+signal LAYER_ROTATE
+signal DOOR_UNLOCKED
 
-signal LAYER_CHANGE()
-signal LAYER_ROTATE()
-signal DOOR_UNLOCKED(code)
 
-	
 #FUNCTIONS
 
 ### IN GAME
 func change_layer(layer_to_active):
 	ACTUAL_LAYER = layer_to_active
 	emit_signal("LAYER_CHANGE")
+
+func rotate_layer():
+	emit_signal("LAYER_ROTATE")
+
+func door_unlocked():
+	emit_signal("DOOR_UNLOCKED")
 
 func check_visibility(place):
 	if place == ACTUAL_LAYER or place == Layer.ANY:

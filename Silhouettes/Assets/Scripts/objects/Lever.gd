@@ -27,7 +27,7 @@ func check_visibility():
 
 func check_interaction():
 	if modulate.a == Global.IS_VISIBLE:
-		if $".".overlaps_body($"../Player") and Input.is_action_just_pressed("interaction"):
+		if $".".overlaps_body($"../../Player") and Input.is_action_just_pressed("interaction"):
 			if state == Global.Lever.OFF:
 				state = Global.Lever.ON
 			else:
