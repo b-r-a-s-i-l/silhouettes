@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/scenes/ui/home/Logo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/sprites/ui/home/Post.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/ui/PowerPoint-background.jpg" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/ui/home/Spot light.png" type="Texture" id=4]
 [ext_resource path="res://assets/scenes/ui/home/Menus.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/sprites/ui/howtoplay/mover up-down.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/ui/howtoplay/entrar.png" type="Texture" id=7]
+[ext_resource path="res://assets/audio/music/Menus.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/scripts/ui/Music_Controller.gd" type="Script" id=9]
 
 [node name="Home" type="CanvasLayer"]
 layer = 2
@@ -14,6 +18,9 @@ anchor_right = 1.002
 anchor_bottom = 1.0
 margin_right = -0.0480957
 margin_bottom = -1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Backgrounnd" type="TextureRect" parent="Control"]
 margin_right = 1026.0
@@ -55,3 +62,18 @@ margin_bottom = 198.24
 margin_left = 6.0
 margin_top = 1.0
 margin_bottom = 604.0
+
+[node name="mover up-down" type="Sprite" parent="Control"]
+position = Vector2( 738.993, 569 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 6 )
+
+[node name="entrar" type="Sprite" parent="Control"]
+position = Vector2( 839.607, 569 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 7 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
+stream = ExtResource( 8 )
+autoplay = true
+script = ExtResource( 9 )

@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/sprites/objects/door_locked.png" type="Texture" id=1]
 [ext_resource path="res://assets/scripts/objects/Door.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/objects/door_unlocked.png" type="Texture" id=3]
-
-
+[ext_resource path="res://assets/audio/sfx/Door Open.wav" type="AudioStream" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 82.0546, 127.191 )
@@ -27,7 +26,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "DoorUnlocked"
-length = 0.1
+length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -48,7 +47,7 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.338907, 0.407296 )
-texture = ExtResource( 1 )
+texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
@@ -56,3 +55,6 @@ shape = SubResource( 1 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/DoorLocked = SubResource( 2 )
 anims/DoorUnlocked = SubResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )

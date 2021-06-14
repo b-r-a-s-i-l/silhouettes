@@ -1,0 +1,10 @@
+=== UI ===
+SETAS - Movimentação
+ENTER - Entrar
+ESC - Voltar / Sair
+
+
+=== In Game ===
+SETAS - Movimentação
+ESPAÇO - Pulo
+F - Interação

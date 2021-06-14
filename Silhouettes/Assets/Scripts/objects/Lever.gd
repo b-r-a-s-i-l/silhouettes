@@ -29,8 +29,10 @@ func check_interaction():
 	if modulate.a == Global.IS_VISIBLE:
 		if $".".overlaps_body($"../../Player") and Input.is_action_just_pressed("interaction"):
 			if state == Global.Lever.OFF:
+				$AudioStreamPlayer.play()
 				state = Global.Lever.ON
 			else:
+				$AudioStreamPlayer.play()
 				state = Global.Lever.OFF
 
 func send_code():

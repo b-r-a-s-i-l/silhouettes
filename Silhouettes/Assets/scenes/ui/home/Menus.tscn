@@ -1,190 +1,294 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=20 format=2]
 
-[ext_resource path="res://assets/scenes/ui/home/Menus.gd" type="Script" id=1]
+[ext_resource path="res://assets/scripts/ui/Menus.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/ui/buttons/Novo_jogo_button_1.png" type="Texture" id=2]
-[ext_resource path="res://assets/sprites/ui/buttons/Options_button_0.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/ui/buttons/Creditos_button_0.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/ui/buttons/Fases_button_1.png" type="Texture" id=4]
-[ext_resource path="res://assets/sprites/ui/buttons/Options_button_1.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/ui/buttons/Creditos_button_1.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprites/ui/buttons/Sair_button_1.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/ui/buttons/Novo_jogo_button_0.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprites/ui/buttons/Sair_button_0.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/ui/buttons/Fases_button_0.png" type="Texture" id=9]
+[ext_resource path="res://assets/audio/sfx/UI Cursor.wav" type="AudioStream" id=10]
+[ext_resource path="res://assets/audio/sfx/UI Confirm.wav" type="AudioStream" id=11]
 
 [sub_resource type="Animation" id=1]
-resource_name = "fases"
+resource_name = "off"
 length = 0.5
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("Fases - Unselec:modulate:a")
+tracks/0/type = "value"
+tracks/0/path = NodePath("Novo Jogo - Selec:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
-tracks/1/type = "bezier"
-tracks/1/path = NodePath("Fases - Selec:modulate:a")
+tracks/1/type = "value"
+tracks/1/path = NodePath("Novo Jogo - Unselec:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="Animation" id=2]
-resource_name = "jogo"
+resource_name = "on"
 length = 0.5
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("Novo Jogo - Selec:modulate:a")
+tracks/0/type = "value"
+tracks/0/path = NodePath("Novo Jogo - Selec:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
-tracks/1/type = "bezier"
-tracks/1/path = NodePath("Novo Jogo - Unselec:modulate:a")
+tracks/1/type = "value"
+tracks/1/path = NodePath("Novo Jogo - Unselec:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
-
-[sub_resource type="Animation" id=3]
-resource_name = "opcoes"
-length = 0.5
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("Opção - Selec:modulate:a")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
-}
-tracks/1/type = "bezier"
-tracks/1/path = NodePath("Opção - Unselec:modulate:a")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
-}
-
-[sub_resource type="Animation" id=4]
-resource_name = "sair"
-length = 0.5
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("Sair - Selec:modulate:a")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
-}
-tracks/1/type = "bezier"
-tracks/1/path = NodePath("Sair - Unselec:modulate:a")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
-}
-
-[sub_resource type="Animation" id=5]
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("Novo Jogo - Selec:modulate:a")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1 )
-}
-tracks/1/type = "bezier"
-tracks/1/path = NodePath("Fases - Unselec:modulate:a")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1 )
-}
-tracks/2/type = "bezier"
-tracks/2/path = NodePath("Opção - Unselec:modulate:a")
+tracks/2/type = "audio"
+tracks/2/path = NodePath("../UI - Hover")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1 )
-}
-tracks/3/type = "bezier"
-tracks/3/path = NodePath("Sair - Unselec:modulate:a")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1 )
-}
-tracks/4/type = "bezier"
-tracks/4/path = NodePath("Novo Jogo - Unselec:modulate:a")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 10 )
+} ],
 "times": PoolRealArray( 0 )
 }
-tracks/5/type = "bezier"
-tracks/5/path = NodePath("Fases - Selec:modulate:a")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+
+[sub_resource type="Animation" id=3]
+resource_name = "off"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Fases - Selec:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Fases - Unselec:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "on"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Fases - Selec:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Fases - Unselec:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "audio"
+tracks/2/path = NodePath("../UI - Hover")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 10 )
+} ],
 "times": PoolRealArray( 0 )
 }
-tracks/6/type = "bezier"
-tracks/6/path = NodePath("Opção - Selec:modulate:a")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+
+[sub_resource type="Animation" id=5]
+resource_name = "off"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Opção - Selec:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Opção - Unselec:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "on"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Opção - Selec:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Opção - Unselec:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "audio"
+tracks/2/path = NodePath("../UI - Hover")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 10 )
+} ],
 "times": PoolRealArray( 0 )
 }
-tracks/7/type = "bezier"
-tracks/7/path = NodePath("Sair - Selec:modulate:a")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+
+[sub_resource type="Animation" id=7]
+resource_name = "off"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sair - Selec:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sair - Unselec:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.996078 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "on"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sair - Selec:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sair - Unselec:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "audio"
+tracks/2/path = NodePath("../UI - Hover")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 10 )
+} ],
 "times": PoolRealArray( 0 )
 }
 
@@ -196,8 +300,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Novo Jogo - Selec" type="TextureRect" parent="."]
-modulate = Color( 1, 1, 1, 0 )
+[node name="NovoJogo" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Novo Jogo - Selec" type="TextureRect" parent="NovoJogo"]
 margin_left = 182.848
 margin_top = 329.955
 margin_right = 312.848
@@ -207,7 +317,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Novo Jogo - Unselec" type="TextureRect" parent="."]
+[node name="Novo Jogo - Unselec" type="TextureRect" parent="NovoJogo"]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 329.848
 margin_top = 329.955
@@ -218,7 +328,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Fases - Selec" type="TextureRect" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NovoJogo"]
+anims/off = SubResource( 1 )
+anims/on = SubResource( 2 )
+
+[node name="Fases" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fases - Selec" type="TextureRect" parent="Fases"]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 218.0
 margin_top = 393.0
 margin_right = 277.0
@@ -228,8 +350,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Fases - Unselec" type="TextureRect" parent="."]
-modulate = Color( 1, 1, 1, 0 )
+[node name="Fases - Unselec" type="TextureRect" parent="Fases"]
 margin_left = 369.997
 margin_top = 393.054
 margin_right = 428.997
@@ -239,19 +360,29 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Opção - Selec" type="TextureRect" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fases"]
+anims/off = SubResource( 3 )
+anims/on = SubResource( 4 )
+
+[node name="Opção" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Opção - Selec" type="TextureRect" parent="Opção"]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 207.0
+margin_left = 195.0
 margin_top = 455.0
-margin_right = 290.0
+margin_right = 296.0
 margin_bottom = 498.0
 texture = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Opção - Unselec" type="TextureRect" parent="."]
-modulate = Color( 1, 1, 1, 0 )
+[node name="Opção - Unselec" type="TextureRect" parent="Opção"]
 margin_left = 399.0
 margin_top = 455.0
 margin_right = 482.0
@@ -261,7 +392,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sair - Selec" type="TextureRect" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Opção"]
+anims/off = SubResource( 5 )
+anims/on = SubResource( 6 )
+
+[node name="Sair" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sair - Selec" type="TextureRect" parent="Sair"]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 222.0
 margin_top = 524.0
@@ -272,8 +414,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sair - Unselec" type="TextureRect" parent="."]
-modulate = Color( 1, 1, 1, 0 )
+[node name="Sair - Unselec" type="TextureRect" parent="Sair"]
 margin_left = 438.0
 margin_top = 524.0
 margin_right = 494.0
@@ -283,10 +424,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "show"
-anims/fases = SubResource( 1 )
-anims/jogo = SubResource( 2 )
-anims/opcoes = SubResource( 3 )
-anims/sair = SubResource( 4 )
-anims/show = SubResource( 5 )
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sair"]
+anims/off = SubResource( 7 )
+anims/on = SubResource( 8 )
+
+[node name="UI - Hover" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+pitch_scale = 1.72
+
+[node name="UI - Confirm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )

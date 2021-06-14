@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Footsteps, Human, Asphalt, Sneaker, Running SND0988 1.wav-2a26a960a8abd93f51c1032616e184b9.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/footsteps/Footsteps, Human, Asphalt, Sneaker, Running SND0988 1.wav"
+dest_files=[ "res://.import/Footsteps, Human, Asphalt, Sneaker, Running SND0988 1.wav-2a26a960a8abd93f51c1032616e184b9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

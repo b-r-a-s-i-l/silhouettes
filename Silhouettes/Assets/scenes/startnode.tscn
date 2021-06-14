@@ -4,3 +4,4 @@
 
 [node name="StartNode" type="Node"]
 script = ExtResource( 1 )
+enable = true
