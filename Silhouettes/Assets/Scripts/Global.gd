@@ -6,6 +6,7 @@ enum Layer {
 	FOWARD
 	ANY
 }
+
 enum Lever { 
 	OFF
 	ON
@@ -33,6 +34,13 @@ enum Menu_Options{
 	SAIR
 }
 
+enum Menu_Stages{
+	FASE1
+	FASE2
+	FASE3
+	FASE4
+}
+
 enum Scenes{
 	HOME
 	STAGES
@@ -41,11 +49,13 @@ enum Scenes{
 	STAGE2
 	STAGE3
 	STAGE4
-	STAGE4
+	QUIT
 }
+
 
 #GLOBALS VARIABLES
 var ACTUAL_LAYER = Layer.FRONT
+var LEVELS_UNLOCKED = 1
 
 #GLOBALS CONST
 const IS_VISIBLE = 1
