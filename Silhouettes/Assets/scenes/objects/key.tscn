@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/scripts/objects/Key.gd" type="Script" id=1]
+[ext_resource path="res://assets/audio/sfx/Key Sound.wav" type="AudioStream" id=2]
+[ext_resource path="res://assets/sprites/objects/key_door.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 37.2794, 18.1593 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "move"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 1, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 10 ), Vector2( 0, 0 ), Vector2( 0, -10 ) ]
+}
+
+[node name="Key" type="Area2D"]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 0, 9.94892 )
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "EM Code DIGITAR O CÓDIGO QUE ABRIRÁ A PORTA."
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -4.12501 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="CollisionShape2D"]
+position = Vector2( 0.652518, -6.5158 )
+scale = Vector2( 0.0568623, 0.0568623 )
+texture = ExtResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 0, -6.62645 )
+stream = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../CollisionShape2D")
+autoplay = "move"
+playback_process_mode = 0
+anims/move = SubResource( 2 )

@@ -2,7 +2,7 @@ extends TileMap
 
 export (String) var code = "layer"
 export (Global.Layer) var layer_ID =  Global.Layer.FRONT
-export (Color) var color = Color.black
+export (Global.Obj_Color) var color = Global.Obj_Color.YELLOW
 
 var tiles_position = []
 var tiles_cells = []
@@ -15,7 +15,6 @@ const SILHOUETTE = 7
 func _ready():
 	Global.connect("LAYER_CHANGE", self, "check_is_active")
 	Global.connect("LAYER_ROTATE", self, "rotate_layer")
-	modulate = color
 	capture_cells()
 
 func check_is_active():

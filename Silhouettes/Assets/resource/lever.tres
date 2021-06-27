@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://assets/scripts/objects/Lever.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+code = ""
+send_when_state = 1
+place = 2
+state = 0
+color = Color( 0, 0, 0, 1 )

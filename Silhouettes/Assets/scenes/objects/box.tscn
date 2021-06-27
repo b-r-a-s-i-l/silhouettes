@@ -3,12 +3,10 @@
 [ext_resource path="res://assets/scripts/objects/Box.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/objects/box.png" type="Texture" id=2]
 
-
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 66.406, 63.8594 )
+extents = Vector2( 63.1704, 63.2917 )
 
 [node name="Box" type="KinematicBody2D"]
-modulate = Color( 0, 0, 0, 1 )
 collision_layer = 64
 collision_mask = 3
 script = ExtResource( 1 )
@@ -17,5 +15,12 @@ script = ExtResource( 1 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 1.82961, 0.291733 )
+position = Vector2( -0.17039, 0.291733 )
 shape = SubResource( 1 )
+__meta__ = {
+"_editor_description_": "PARA MUDAR JUNTO COM A LAYER
+Utilizar em Code: layer
+
+INTERAÇÃO SOMENTE COM LEVER:
+Utilizar em Code: O QUE QUISER"
+}

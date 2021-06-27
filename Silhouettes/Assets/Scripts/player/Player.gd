@@ -6,12 +6,12 @@ export (int) var push_strength = 5
 export (int) var gravity = 4000
 export (float, 0, 1.0) var friction = 1.0
 export (float, 0, 1.0) var acceleration = 0.25
-export (Color) var color = Color.black
+export (Global.Obj_Color) var color = Global.Obj_Color.YELLOW
 
 var velocity = Vector2.ZERO
 
 func _ready():
-	modulate = color
+	modulate = Global.colorizire(color, Global.IS_VISIBLE)
 	z_index = 1
 
 func _physics_process(delta):
@@ -51,6 +51,5 @@ func get_input(delta):
 			velocity.y = jump_speed
 		else:
 			$AnimationPlayer.play("idle")
-	if Input.is_action_just_pressed("rotate"):
-		Global.emit_signal("LAYER_ROTATE")
+		
 
