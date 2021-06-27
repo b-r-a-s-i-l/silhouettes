@@ -44,6 +44,9 @@ tracks/0/keys = {
 modulate = Color( 0, 0, 0, 1 )
 collision_layer = 32
 script = ExtResource( 2 )
+__meta__ = {
+"_editor_description_": "UTILIZAR EM Unlocked Code O CóDIGO DA CHAVE."
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.338907, 0.407296 )

@@ -4,10 +4,10 @@ export (String) var code = null
 export (Global.Lever) var send_when_state = Global.Lever.ON
 export (Global.Layer) var place = Global.Layer.ANY
 export (Global.Lever) var state = Global.Lever.OFF
-export (Color) var color = Color.black
+export (Global.Obj_Color) var color = Global.Obj_Color.YELLOW
 
 func _ready():
-	modulate = color
+	modulate = Global.colorizire(color, Global.check_visibility(place))
 
 func _process(_delta):
 	update_state()
@@ -38,6 +38,7 @@ func check_interaction():
 func send_code():
 	if state == send_when_state:
 		if code == "layer":
+			Global.emit_signal("BOX_INTERAGER", code)
 			Global.change_layer(state)
 		else:
-			Global.emit_signal("DOOR_UNLOCKED", code)
+			Global.emit_signal("BOX_INTERAGER", code)

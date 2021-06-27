@@ -11,6 +11,13 @@ extents = Vector2( 28.9232, 36.9183 )
 modulate = Color( 0, 0, 0, 1 )
 collision_layer = 16
 script = ExtResource( 2 )
+__meta__ = {
+"_editor_description_": "PARA MUDAR AS LAYERS
+Utilizar em Code: layer
+
+INTERAÇÃO COM AS BOX:
+Utilizar em Code: O QUE QUISER"
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.2, 0.2 )

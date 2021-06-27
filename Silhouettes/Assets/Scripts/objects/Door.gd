@@ -4,7 +4,7 @@ export (String) var unlocked_code = null
 export (Global.Lever) var state = Global.Door.LOCKED
 export (Global.Layer) var place = Global.Layer.FOWARD
 export (Global.Scenes) var next_scene =  Global.Scenes.HOME
-export (Color) var color = Color.black
+export (Global.Obj_Color) var color = Global.Obj_Color.YELLOW
 
 onready var animation = $"AnimationPlayer"
 
@@ -13,7 +13,7 @@ var sound = false
 
 func _ready():
 	object = Global.connect("DOOR_UNLOCKED", self, "door_unlocked")
-	modulate = color
+	modulate = Global.colorizire(color, Global.check_visibility(place))
 
 func _process(_delta):
 	check_visibility()
@@ -46,4 +46,6 @@ func door_animation():
 		animation.play("DoorLocked")
 
 func go_next():
+	if Global.LEVELS_UNLOCKED < 3:
+		Global.LEVELS_UNLOCKED += 1
 	SceneChanger.change_scene(next_scene)

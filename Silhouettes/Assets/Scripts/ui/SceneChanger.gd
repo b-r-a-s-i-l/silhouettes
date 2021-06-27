@@ -19,13 +19,13 @@ func change_scene(new_scene):
 		Global.Scenes.OPTIONS:
 			path = 'res://assets/scenes/ui/options.tscn'
 		Global.Scenes.STAGE1:
-			path = 'res://assets/scenes/levels/stage.tscn'
+			path = 'res://assets/scenes/levels/stage1.tscn'
 		Global.Scenes.STAGE2:
-			pass
+			path = 'res://assets/scenes/levels/stage2.tscn'
 		Global.Scenes.STAGE3:
-			pass
+			path = 'res://assets/scenes/levels/stage3.tscn'
 		Global.Scenes.STAGE4:
-			pass
+			path = 'res://assets/scenes/levels/stage4.tscn'
 		Global.Scenes.QUIT:
 			get_tree().quit()
 	
