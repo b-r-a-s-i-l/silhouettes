@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/interagir.png-6b320c5d9a0ba1a328f2e1f241fcb529.stex"
+path="res://.import/interagir.png-369e588a461e45fb35df82b8322b784a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/howtoplay/interagir.png"
-dest_files=[ "res://.import/interagir.png-6b320c5d9a0ba1a328f2e1f241fcb529.stex" ]
+source_file="res://Assets/sprites/ui/howtoplay/interagir.png"
+dest_files=[ "res://.import/interagir.png-369e588a461e45fb35df82b8322b784a.stex" ]
 
 [params]
 

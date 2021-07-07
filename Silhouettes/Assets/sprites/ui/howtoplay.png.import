@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/howtoplay.png-e24fd9bfc3c20334ea008bf72c50d163.stex"
+path="res://.import/howtoplay.png-fecf36c6b6d882309f4ecd883f4575f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/howtoplay.png"
-dest_files=[ "res://.import/howtoplay.png-e24fd9bfc3c20334ea008bf72c50d163.stex" ]
+source_file="res://Assets/sprites/ui/howtoplay.png"
+dest_files=[ "res://.import/howtoplay.png-fecf36c6b6d882309f4ecd883f4575f9.stex" ]
 
 [params]
 

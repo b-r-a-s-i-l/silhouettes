@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Door Open.wav-95b1255b1b6da7950c0e12e5a6a9397a.sample"
+path="res://.import/Door Open.wav-5dda50e82fa4657453c03f5dbfd326b6.sample"
 
 [deps]
 
-source_file="res://assets/audio/sfx/Door Open.wav"
-dest_files=[ "res://.import/Door Open.wav-95b1255b1b6da7950c0e12e5a6a9397a.sample" ]
+source_file="res://Assets/audio/sfx/Door Open.wav"
+dest_files=[ "res://.import/Door Open.wav-5dda50e82fa4657453c03f5dbfd326b6.sample" ]
 
 [params]
 

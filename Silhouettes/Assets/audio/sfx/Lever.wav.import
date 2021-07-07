@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Lever.wav-ad85fee773c2b7d77f60a98fb2a2c009.sample"
+path="res://.import/Lever.wav-0307da90369882800f60f848d19c652d.sample"
 
 [deps]
 
-source_file="res://assets/audio/sfx/Lever.wav"
-dest_files=[ "res://.import/Lever.wav-ad85fee773c2b7d77f60a98fb2a2c009.sample" ]
+source_file="res://Assets/audio/sfx/Lever.wav"
+dest_files=[ "res://.import/Lever.wav-0307da90369882800f60f848d19c652d.sample" ]
 
 [params]
 

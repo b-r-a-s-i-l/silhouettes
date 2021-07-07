@@ -166,8 +166,8 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
-vframes = 2
 hframes = 4
+vframes = 2
 frame = 3
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -177,16 +177,26 @@ frames = SubResource( 11 )
 animation = "jump"
 
 [node name="Body" type="CollisionShape2D" parent="."]
-position = Vector2( -6.43023, 5.70347 )
+position = Vector2( -6.43023, 6.29424 )
 shape = SubResource( 12 )
 
 [node name="Left" type="RayCast2D" parent="."]
-position = Vector2( -0.590756, 27.5003 )
+position = Vector2( -0.591, 27.5 )
+rotation = 1.5708
+collision_mask = 64
+
+[node name="Left2" type="RayCast2D" parent="."]
+position = Vector2( -0.591, 100 )
 rotation = 1.5708
 collision_mask = 64
 
 [node name="Right" type="RayCast2D" parent="."]
-position = Vector2( -0.590756, 27.5003 )
+position = Vector2( -0.591, 27.5 )
+rotation = -1.5708
+collision_mask = 64
+
+[node name="Right2" type="RayCast2D" parent="."]
+position = Vector2( -0.591, 100 )
 rotation = -1.5708
 collision_mask = 64
 

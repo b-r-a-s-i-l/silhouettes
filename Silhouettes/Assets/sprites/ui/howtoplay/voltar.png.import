@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/voltar.png-e99b52be5b7cae453bda520dd832037b.stex"
+path="res://.import/voltar.png-56b6905762769c9da42cf96a18c35859.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/howtoplay/voltar.png"
-dest_files=[ "res://.import/voltar.png-e99b52be5b7cae453bda520dd832037b.stex" ]
+source_file="res://Assets/sprites/ui/howtoplay/voltar.png"
+dest_files=[ "res://.import/voltar.png-56b6905762769c9da42cf96a18c35859.stex" ]
 
 [params]
 

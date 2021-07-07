@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fases_button_0.png-d3eee9f029efaf1ff24615ee09e8cde3.stex"
+path="res://.import/Fases_button_0.png-4591c595f89de56186fdedcf7b0d4b44.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/buttons/Fases_button_0.png"
-dest_files=[ "res://.import/Fases_button_0.png-d3eee9f029efaf1ff24615ee09e8cde3.stex" ]
+source_file="res://Assets/sprites/ui/buttons/Fases_button_0.png"
+dest_files=[ "res://.import/Fases_button_0.png-4591c595f89de56186fdedcf7b0d4b44.stex" ]
 
 [params]
 

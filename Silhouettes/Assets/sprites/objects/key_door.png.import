@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/key_door.png-4527fc2f1b5bd491f3df9f68128ccf46.stex"
+path="res://.import/key_door.png-ff350fd30d72d840b882e362053c3022.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/objects/key_door.png"
-dest_files=[ "res://.import/key_door.png-4527fc2f1b5bd491f3df9f68128ccf46.stex" ]
+source_file="res://Assets/sprites/objects/key_door.png"
+dest_files=[ "res://.import/key_door.png-ff350fd30d72d840b882e362053c3022.stex" ]
 
 [params]
 

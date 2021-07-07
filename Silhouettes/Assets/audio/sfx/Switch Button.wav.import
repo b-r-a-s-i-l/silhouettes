@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Switch Button.wav-bf1807b24eb3d3cd07d7444b61047fe5.sample"
+path="res://.import/Switch Button.wav-5d492015ef658b2a302607cd61aea0ac.sample"
 
 [deps]
 
-source_file="res://assets/audio/sfx/Switch Button.wav"
-dest_files=[ "res://.import/Switch Button.wav-bf1807b24eb3d3cd07d7444b61047fe5.sample" ]
+source_file="res://Assets/audio/sfx/Switch Button.wav"
+dest_files=[ "res://.import/Switch Button.wav-5d492015ef658b2a302607cd61aea0ac.sample" ]
 
 [params]
 

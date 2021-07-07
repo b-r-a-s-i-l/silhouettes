@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Person_climb_1.png-4f81fecb81b92962b49a5bc011e2b310.stex"
+path="res://.import/Person_climb_1.png-46708f999a533f0c49302d11be210bc8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/character/Person_climb_1.png"
-dest_files=[ "res://.import/Person_climb_1.png-4f81fecb81b92962b49a5bc011e2b310.stex" ]
+source_file="res://Assets/sprites/character/Person_climb_1.png"
+dest_files=[ "res://.import/Person_climb_1.png-46708f999a533f0c49302d11be210bc8.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/door_unlocked.png-c9164c5dfeb0ef4589d411c50227149b.stex"
+path="res://.import/door_unlocked.png-3ca741af8ae8dccceeccb174c4ebfe71.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/objects/door_unlocked.png"
-dest_files=[ "res://.import/door_unlocked.png-c9164c5dfeb0ef4589d411c50227149b.stex" ]
+source_file="res://Assets/sprites/objects/door_unlocked.png"
+dest_files=[ "res://.import/door_unlocked.png-3ca741af8ae8dccceeccb174c4ebfe71.stex" ]
 
 [params]
 

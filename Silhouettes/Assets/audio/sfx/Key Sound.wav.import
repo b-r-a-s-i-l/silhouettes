@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Key Sound.wav-e2f9add973a6b89329fa2ce1f168ef99.sample"
+path="res://.import/Key Sound.wav-a57d26292bcf22d77aecfa4efc7c2467.sample"
 
 [deps]
 
-source_file="res://assets/audio/sfx/Key Sound.wav"
-dest_files=[ "res://.import/Key Sound.wav-e2f9add973a6b89329fa2ce1f168ef99.sample" ]
+source_file="res://Assets/audio/sfx/Key Sound.wav"
+dest_files=[ "res://.import/Key Sound.wav-a57d26292bcf22d77aecfa4efc7c2467.sample" ]
 
 [params]
 

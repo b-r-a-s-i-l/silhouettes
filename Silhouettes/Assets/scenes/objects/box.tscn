@@ -15,7 +15,7 @@ script = ExtResource( 1 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.17039, 0.291733 )
+position = Vector2( 0.16332, 0.291733 )
 shape = SubResource( 1 )
 __meta__ = {
 "_editor_description_": "PARA MUDAR JUNTO COM A LAYER

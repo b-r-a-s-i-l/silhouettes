@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Spot light.png-f1148999d5dad51e36720a11587ff2d7.stex"
+path="res://.import/Spot light.png-f09461b15433fb9cbbd0077e3a926f2b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/home/Spot light.png"
-dest_files=[ "res://.import/Spot light.png-f1148999d5dad51e36720a11587ff2d7.stex" ]
+source_file="res://Assets/sprites/ui/home/Spot light.png"
+dest_files=[ "res://.import/Spot light.png-f09461b15433fb9cbbd0077e3a926f2b.stex" ]
 
 [params]
 

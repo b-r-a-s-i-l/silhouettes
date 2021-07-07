@@ -38,3 +38,4 @@ func send_code():
 	if state == Global.Button.PRESSED:
 		$AudioStreamPlayer.play()
 		Global.emit_signal("LAYER_ROTATE")
+			
