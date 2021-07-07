@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/door_locked.png-3ca3222b005314f78d9179da47958ae9.stex"
+path="res://.import/door_locked.png-c792247f825aaa550852e0e789d588f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/objects/door_locked.png"
-dest_files=[ "res://.import/door_locked.png-3ca3222b005314f78d9179da47958ae9.stex" ]
+source_file="res://Assets/sprites/objects/door_locked.png"
+dest_files=[ "res://.import/door_locked.png-c792247f825aaa550852e0e789d588f9.stex" ]
 
 [params]
 

@@ -36,7 +36,7 @@ func check_interaction():
 				state = Global.Lever.OFF
 
 func send_code():
-	if state == send_when_state:
+	#if state == send_when_state:
 		if code == "layer":
 			Global.emit_signal("BOX_INTERAGER", code)
 			Global.change_layer(state)

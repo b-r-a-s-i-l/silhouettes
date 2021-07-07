@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Music_frame1.png-735c63030e4809038bbb7e6e7ad18507.stex"
+path="res://.import/Music_frame1.png-fdb3f9f966dafced0a5a61f2115b5d6f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/options/Music_frame1.png"
-dest_files=[ "res://.import/Music_frame1.png-735c63030e4809038bbb7e6e7ad18507.stex" ]
+source_file="res://Assets/sprites/ui/options/Music_frame1.png"
+dest_files=[ "res://.import/Music_frame1.png-fdb3f9f966dafced0a5a61f2115b5d6f.stex" ]
 
 [params]
 

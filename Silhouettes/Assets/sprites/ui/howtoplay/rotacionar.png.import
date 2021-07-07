@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rotacionar.png-2ecc86cf420911d57eeb21bd59435f69.stex"
+path="res://.import/rotacionar.png-b675499954ec0738b58226c86636ae87.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/howtoplay/rotacionar.png"
-dest_files=[ "res://.import/rotacionar.png-2ecc86cf420911d57eeb21bd59435f69.stex" ]
+source_file="res://Assets/sprites/ui/howtoplay/rotacionar.png"
+dest_files=[ "res://.import/rotacionar.png-b675499954ec0738b58226c86636ae87.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/entrar.png-0e72fbd9df94db2d677cf17f05548f09.stex"
+path="res://.import/entrar.png-558643b0b362162adf5fc16677ffea0b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/howtoplay/entrar.png"
-dest_files=[ "res://.import/entrar.png-0e72fbd9df94db2d677cf17f05548f09.stex" ]
+source_file="res://Assets/sprites/ui/howtoplay/entrar.png"
+dest_files=[ "res://.import/entrar.png-558643b0b362162adf5fc16677ffea0b.stex" ]
 
 [params]
 

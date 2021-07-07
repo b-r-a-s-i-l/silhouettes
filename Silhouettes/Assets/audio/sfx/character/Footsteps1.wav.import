@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Footsteps1.wav-db49af92725cff14caa51d41035c3e5e.sample"
+path="res://.import/Footsteps1.wav-320efc3580cb8bb699cd76d7f08a99fe.sample"
 
 [deps]
 
-source_file="res://assets/audio/sfx/character/Footsteps1.wav"
-dest_files=[ "res://.import/Footsteps1.wav-db49af92725cff14caa51d41035c3e5e.sample" ]
+source_file="res://Assets/audio/sfx/character/Footsteps1.wav"
+dest_files=[ "res://.import/Footsteps1.wav-320efc3580cb8bb699cd76d7f08a99fe.sample" ]
 
 [params]
 

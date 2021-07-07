@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mover up-down.png-0ba574c3c314cffea9beb999583cc5d3.stex"
+path="res://.import/mover up-down.png-34436a3d052fbc6233cd2a0278a24428.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/howtoplay/mover up-down.png"
-dest_files=[ "res://.import/mover up-down.png-0ba574c3c314cffea9beb999583cc5d3.stex" ]
+source_file="res://Assets/sprites/ui/howtoplay/mover up-down.png"
+dest_files=[ "res://.import/mover up-down.png-34436a3d052fbc6233cd2a0278a24428.stex" ]
 
 [params]
 

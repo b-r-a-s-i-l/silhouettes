@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Gameplay.wav-0dd6a71679abaff838c5754fa00c548c.sample"
+path="res://.import/Gameplay.wav-eb0c71d920dd98c7034ec8513b91ff0e.sample"
 
 [deps]
 
-source_file="res://assets/audio/music/Gameplay.wav"
-dest_files=[ "res://.import/Gameplay.wav-0dd6a71679abaff838c5754fa00c548c.sample" ]
+source_file="res://Assets/audio/music/Gameplay.wav"
+dest_files=[ "res://.import/Gameplay.wav-eb0c71d920dd98c7034ec8513b91ff0e.sample" ]
 
 [params]
 

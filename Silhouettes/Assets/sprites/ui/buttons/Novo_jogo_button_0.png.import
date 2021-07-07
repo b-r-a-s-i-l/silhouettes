@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Novo_jogo_button_0.png-f4c4aaaddbcec2248023b71985e63f68.stex"
+path="res://.import/Novo_jogo_button_0.png-d8b26672de609343ff0b3ed27af6a73a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/buttons/Novo_jogo_button_0.png"
-dest_files=[ "res://.import/Novo_jogo_button_0.png-f4c4aaaddbcec2248023b71985e63f68.stex" ]
+source_file="res://Assets/sprites/ui/buttons/Novo_jogo_button_0.png"
+dest_files=[ "res://.import/Novo_jogo_button_0.png-d8b26672de609343ff0b3ed27af6a73a.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Creditos_button_1.png-ba23ead3ef672b579d576d056abbb20b.stex"
+path="res://.import/Creditos_button_1.png-e13fe662c54b8265cf8fc21e8416ce0d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/buttons/Creditos_button_1.png"
-dest_files=[ "res://.import/Creditos_button_1.png-ba23ead3ef672b579d576d056abbb20b.stex" ]
+source_file="res://Assets/sprites/ui/buttons/Creditos_button_1.png"
+dest_files=[ "res://.import/Creditos_button_1.png-e13fe662c54b8265cf8fc21e8416ce0d.stex" ]
 
 [params]
 

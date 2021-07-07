@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PowerPoint-background.jpg-8ffc3e5ad1d91f757ad67c12a25837d9.stex"
+path="res://.import/PowerPoint-background.jpg-9ec0f62d5597fee0bd200f584b03fdea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/PowerPoint-background.jpg"
-dest_files=[ "res://.import/PowerPoint-background.jpg-8ffc3e5ad1d91f757ad67c12a25837d9.stex" ]
+source_file="res://Assets/sprites/ui/PowerPoint-background.jpg"
+dest_files=[ "res://.import/PowerPoint-background.jpg-9ec0f62d5597fee0bd200f584b03fdea.stex" ]
 
 [params]
 

@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 export (int) var speed = 600
 export (int) var jump_speed = -1200
-export (int) var push_strength = 5
+export (int) var push_strength = 300
 export (int) var gravity = 4000
 export (float, 0, 1.0) var friction = 1.0
 export (float, 0, 1.0) var acceleration = 0.25
@@ -28,12 +28,20 @@ func get_input(delta):
 		if $"Right".is_colliding():
 			var object = $"Right".get_collider()
 			object.move_and_slide(Vector2(30,0) * push_strength * delta)
+		$"Right2".enabled = true
+		if $"Right2".is_colliding():
+			var object = $"Right2".get_collider()
+			object.move_and_slide(Vector2(30,0) * push_strength * delta)
 	elif Input.is_action_pressed("move_left"):
 		dir -= 1
 		$Sprite.flip_h = true
 		$"Left".enabled = true
 		if $"Left".is_colliding():
 			var object = $"Left".get_collider()
+			object.move_and_slide(Vector2(-30,0) * push_strength * delta)
+		$"Left2".enabled = true
+		if $"Left2".is_colliding():
+			var object = $"Left2".get_collider()
 			object.move_and_slide(Vector2(-30,0) * push_strength * delta)
 		
 	if dir != 0:
@@ -43,6 +51,8 @@ func get_input(delta):
 		$AnimationPlayer.play("idle")
 		$"Right".enabled = false
 		$"Left".enabled = false
+		$"Right2".enabled = false
+		$"Left2".enabled = false
 		velocity.x = lerp(velocity.x, 0, friction)
 		
 	if Input.is_action_just_pressed("jump"):

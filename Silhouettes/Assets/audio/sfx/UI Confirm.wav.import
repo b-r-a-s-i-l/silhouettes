@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/UI Confirm.wav-a59b50af67236ee6c610b41f377fdbb8.sample"
+path="res://.import/UI Confirm.wav-f2547374ffccdf6bf497a48bfe38e29d.sample"
 
 [deps]
 
-source_file="res://assets/audio/sfx/UI Confirm.wav"
-dest_files=[ "res://.import/UI Confirm.wav-a59b50af67236ee6c610b41f377fdbb8.sample" ]
+source_file="res://Assets/audio/sfx/UI Confirm.wav"
+dest_files=[ "res://.import/UI Confirm.wav-f2547374ffccdf6bf497a48bfe38e29d.sample" ]
 
 [params]
 

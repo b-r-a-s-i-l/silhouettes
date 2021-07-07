@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sair_button_0.png-df909860915689d4f7457ec5bca6933e.stex"
+path="res://.import/Sair_button_0.png-4435249396a7b8a1ad83aff859fde3cb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/buttons/Sair_button_0.png"
-dest_files=[ "res://.import/Sair_button_0.png-df909860915689d4f7457ec5bca6933e.stex" ]
+source_file="res://Assets/sprites/ui/buttons/Sair_button_0.png"
+dest_files=[ "res://.import/Sair_button_0.png-4435249396a7b8a1ad83aff859fde3cb.stex" ]
 
 [params]
 
